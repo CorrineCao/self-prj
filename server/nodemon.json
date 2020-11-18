@@ -1,0 +1,13 @@
+{
+  "restartable": "rs",
+  "watch": ["dist/"],
+  "verbose": true,
+  "execMap": {
+    "js": "node"
+  },
+  "env": {
+    "NODE_ENV": "dev",
+    "PORT": 8080
+  },
+  "ext": "js json"
+}
