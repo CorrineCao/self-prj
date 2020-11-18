@@ -8,7 +8,6 @@ const instance: AxiosInstance = axios.create({
   baseURL: '/api',
   headers: {
     'X-Login-Token': window.token,
-    'app-id': 'top',
   },
   transformResponse: [
     (data): void => {
