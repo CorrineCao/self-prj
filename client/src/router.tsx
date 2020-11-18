@@ -6,7 +6,7 @@ import {
   RouteProps,
 } from 'react-router-dom';
 import { PrivilegeMapType } from 'util/typesEnum';
-import { Hello2 } from "pages/Hello2";
+import HomePage from "pages/homePage";
 import ErrorPage from 'pages/noAuth';
 
 declare global {
@@ -66,17 +66,10 @@ const AppRouter = (): React.ReactElement => {
         <AuthRoute
           exact
           path="/"
-          component={Hello2}
+          component={HomePage}
           hasTab
-          privilegeName="JG_COURSE_MAIN_AUTH"
+          privilegeName=""
           deniedError="您没有首页的权限"
-        />
-        <AuthRoute
-          path="/test"
-          component={Hello2}
-          hasTab
-          privilegeName="JG_COURSE_MAIN_AUTH"
-          deniedError="您不能查看收藏列表"
         />
         <Route
           render={(): React.ReactElement => (
